@@ -357,6 +357,7 @@ export default function Home() {
               height={1400}
               alt="news"
               src={img}
+              priority={true}
               className=" h-40 lg:h-48 xl:h-64"
             />
             <p className="flex mt-3 xl:mt-8 text-sm lg:text-base justify-center">

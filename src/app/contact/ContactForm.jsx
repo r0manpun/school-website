@@ -48,14 +48,9 @@ const ContactForm = () => {
     }
   };
   return (
-    <div>{submissionStatus === "success" ? (
-        <div className="text-green-600 text-center ">
-          Your message has been submitted successfully !
-        </div>
-      ) : (
         <form
           onSubmit={handleSubmit}
-          className="w-80 h-72 sm:h-80 2xl:w-[590px] md:w-[44vw] md:h-[362px] lg:h-[425px] xl:h-[540px]  2xl:h-[560px] opacity-70 bg-white rounded-2xl xl:rounded-xl mx-auto pt-4"
+          className="w-80 h-72 sm:h-80 2xl:w-[540px] md:w-[44vw] md:h-[362px] lg:h-[425px] xl:h-[540px] 2xl:h-[530px] md:opacity-60 bg-white rounded-2xl xl:rounded-xl mx-auto pt-4 "
         >
           <h1 className="lg:text-2xl xl:text-3xl text-center mt-2 xl:mt-6 font-medium">
             Reach Out to Us
@@ -66,7 +61,7 @@ const ContactForm = () => {
             value={fullname}
             type="text"
             placeholder="Full Name"
-            className="w-[75%] h-8 md:h-11 lg:h-12 ml-12 mt-2 xl:mt-8 xl:h-16 border-b-[1px] border-black"
+            className="w-[75%] h-8 md:h-11 lg:h-12 ml-12 mt-2 xl:mt-8 xl:h-16 border-b-[1px] border-black p-2"
             required
           />
           <input
@@ -74,7 +69,7 @@ const ContactForm = () => {
             value={email}
             type="email"
             placeholder="Email"
-            className="w-[75%] h-8 md:h-11  lg:h-12 ml-12 xl:h-16 border-b-[1px] border-black"
+            className="w-[75%] h-8 md:h-11 lg:h-12 ml-12 xl:h-16 border-b-[1px] border-black p-2"
             required
           />
           <input
@@ -82,7 +77,7 @@ const ContactForm = () => {
             value={phoneNumber}
             type="tel"
             placeholder="Phone number"
-            className="w-[75%] h-8 md:h-11  lg:h-12 ml-12 xl:h-16 border-b-[1px] border-black"
+            className="w-[75%] h-8 md:h-11  lg:h-12 ml-12 xl:h-16 border-b-[1px] border-black p-2"
             required
           />
           <input
@@ -90,7 +85,7 @@ const ContactForm = () => {
             value={subject}
             type="text"
             placeholder="Subject"
-            className="w-[75%] h-8 md:h-11  lg:h-12 ml-12 xl:h-16 border-b-[1px] border-black"
+            className="w-[75%] h-8 md:h-11 lg:h-12 ml-12 xl:h-16 border-b-[1px] border-black p-2"
             required
           />
           <input
@@ -98,7 +93,7 @@ const ContactForm = () => {
             value={message}
             type="text"
             placeholder="Message"
-            className="w-[75%] h-8 md:h-11  lg:h-12 ml-12 xl:h-16 border-b-[1px] border-black"
+            className="w-[75%] h-8 md:h-11  lg:h-12 ml-12 xl:h-16 border-b-[1px] border-black p-2"
             required
           />
           <button
@@ -115,8 +110,6 @@ const ContactForm = () => {
             />
           </button>
         </form>
-      )}
-      {/* Contact Form */}</div>
   )
 }
 

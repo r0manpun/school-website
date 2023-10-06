@@ -78,9 +78,9 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <hr className="hidden lg:block absolute bottom-[88px] w-[220px] lg:w-[20%] border-[#ea9443] border-[1.5px] right-[19%]" />
+            <hr className="hidden lg:block absolute bottom-[88px] w-[220px] lg:w-[20%] border-[#ea9443] border-[1.5px] right-[19%] xl:right-[14%]" />
           </>
-        <div className="hidden lg:flex absolute justify-around w-[100px] bottom-[40px] lg:right-[17%] xl:right-[21%] lg:w-60 xl:w-[296px] ">
+        <div className="hidden lg:flex absolute justify-around w-[100px] bottom-[40px] lg:right-[17%] xl:right-[14%] lg:w-60 xl:w-[296px] ">
           <Link
             href="https://www.facebook.com/people/Rainbow-Academic-Homes-Secondary-School/100071081032855/"
             target="_blank"

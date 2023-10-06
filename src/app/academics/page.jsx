@@ -14,6 +14,9 @@ export default function Academics() {
         <Image
           width={1400}
           height={1300}
+          priority={true}
+          placeholder="blur"
+          blurDataURL="/assets/academics/h.jpg"
           src="/assets/academics/h.jpg"
           className="object-cover min-h-full w-full p-5"
           alt="academics1"

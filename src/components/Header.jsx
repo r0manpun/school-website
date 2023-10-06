@@ -16,6 +16,7 @@ export default function Header() {
           height={690}
           src="/logo2.png"
           style={{ filter: "brightness(450%)" }}
+          priority={true}
           alt="logo"
         />
         <ul className="flex flex-col text-white justify-center -mt-5 ml-2 relative">
@@ -33,14 +34,14 @@ export default function Header() {
           </li>
           <li className="flex items-center gap-1">
             <FiMail className="text-xl 2xl:text-3xl" />{" "}
-            <Link href="mailto:rainbowacademic52@gmail.com">
+            <a href="mailto:rainbowacademic52@gmail.com">
               rainbowacademic52@gmail.com
-            </Link>
+            </a>
           </li>
           <li className="flex items-center gap-1">
             <FiPhone className="text-xl 2xl:text-3xl" /> 
-            <Link href="tel:061-430577">+977 061-430577</Link>,
-            <Link href="tel:061-430191">061-430191</Link>
+            <a href="tel:061-430577">+977 061-430577</a>,
+            <a href="tel:061-430191">061-430191</a>
           </li>
           <div className="border-r h-14 my-auto" />
           <Link

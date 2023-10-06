@@ -26,6 +26,7 @@ const DialogBox = () => {
           src="/assets/dialog.jpg"
           width={1440}
           height={1400}
+          priority={true}
           alt="image"
         />
       </div>

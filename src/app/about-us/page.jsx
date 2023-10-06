@@ -3,7 +3,7 @@ import React from "react";
 import { Playfair_Display } from "next/font/google";
 
 const playfair = Playfair_Display({
-  weight: ["500", "600"],
+  weight: ["500","600"],
   subsets: ["latin"],
   style: ["normal"],
 });
@@ -17,7 +17,7 @@ export default function page() {
         <h1 className="text-[2.5vw] lg:text-2xl xl:text-4xl text-center pt-8 font-semibold">
           Our Mission and Vision
         </h1>
-        <div className="flex w-11/12  2xl:h-[457px] mx-auto mt-6 gap-12 px-6">
+        <div className="flex w-11/12 2xl:h-[457px] mx-auto mt-6 gap-6 xl:gap-12 px-6">
           <Image
             width={2180}
             height={1365}
@@ -25,9 +25,9 @@ export default function page() {
             className="w-[45vw] 2xl:w-[658px] h-full "
             alt="mission"
           />
-          <div className="w-[40%] h-[45%] xl:p-4">
+          <div className="w-1/2 h-[45%] xl:p-4">
             <h1 className="text-[2vw] xl:text-3xl font-bold">Mission</h1>
-            <p className="text-[1.5vw] 2xl:text-[22px] mt-3">
+            <p className="text-[1.5vw] xl:text-[22px] mt-3">
               Our mission is to empower students through a transformative
               educational experience that ignites their intellectual curiosity,
               nurtures their personal growth, and prepares them to become
@@ -39,10 +39,10 @@ export default function page() {
             </p>
           </div>
         </div>
-        <div className="flex w-11/12 2xl:h-[457px] mx-auto mt-6 gap-6 2xl:gap-12 px-6">
-          <div className="w-[40%] h-[45%] pt-6  ml-auto">
-            <h1 className="xl:text-3xl font-bold ">Vision</h1>
-            <p className="text-[1.5vw] 2xl:text-[22px] mt-3">
+        <div className="flex w-11/12 2xl:h-[457px] mx-auto mt-6 gap-6 xl:gap-12 px-6">
+          <div className="w-1/2 h-[45%] lg:pt-6 ml-auto">
+            <h1 className="text-[2vw] xl:text-3xl font-bold ">Vision</h1>
+            <p className="text-[1.5vw] xl:text-[22px] mt-3">
               Our vision is to empower students to reach their full potential
               academically, socially, and emotionally. We create a supportive
               and inclusive learning community that nurtures a passion for
