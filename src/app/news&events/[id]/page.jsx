@@ -1,11 +1,14 @@
 import Image from "next/image";
 import React from "react";
 
-
-
-const data ={
-    img :[ "/assets/events/a.jpg", "/assets/events/b.jpg","/assets/events/c.jpg","/assets/events/d.jpg" ]
-}
+const data = {
+  img: [
+    "/assets/events/a.jpg",
+    "/assets/events/b.jpg",
+    "/assets/events/c.jpg",
+    "/assets/events/d.jpg",
+  ],
+};
 
 export default function page() {
   return (
@@ -30,9 +33,18 @@ export default function page() {
         </p>
       </div>
       <div className="flex flex-wrap gap-4 xl:gap-x-6 xl:gap-y-10 place-content-center sm:w-10/12 max-w-screen-2xl mx-auto mt-8">
-        {data.img.map((url) =>(<Image width={1500} height={1000} src={url} alt="events" key={url} className="object-cover w-36 h-32 md:w-52 md:h-44 lg:w-72 lg:h-72 2xl:w-96 "/>) )}
-        </div>
-        <div className="flex justify-center items-center gap-2 xl:gap-3 text-[10px] xl:text-2xl mt-5 xl:mt-10">
+        {data.img.map((url) => (
+          <Image
+            width={1500}
+            height={1000}
+            src={url}
+            alt="events"
+            key={url}
+            className="object-cover w-36 h-32 md:w-52 md:h-44 lg:w-72 lg:h-72 2xl:w-96 "
+          />
+        ))}
+      </div>
+      <div className="flex justify-center items-center gap-2 xl:gap-3 text-[10px] xl:text-2xl py-5 xl:py-10">
         <hr className=" border-black w-10 xl:w-20" />
         27th Flagun, 2079
         <hr className="border-black w-10 xl:w-20" />

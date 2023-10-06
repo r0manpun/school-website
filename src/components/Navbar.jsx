@@ -11,36 +11,6 @@ const playfair = Playfair_Display({
   style: ["normal"],
 });
 
-const navItem = [
-  {
-    title: "home",
-    slug: "",
-  },
-  {
-    title: "news/events",
-    slug: "news&events",
-  },
-  {
-    title: "academics",
-    slug: "academics",
-  },
-  {
-    title: "gallery",
-    slug: "gallery",
-  },
-  {
-    title: "about us",
-    slug: "about-us",
-  },
-  {
-    title: "conact",
-    slug: "contact",
-  },
-  {
-    title: "admission",
-    slug: "admission",
-  },
-];
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -84,7 +54,11 @@ export default function Navbar() {
                 key={index}
                 className="p-4 text-4xl uppercase text-white hover:text-[#1091C8]"
               >
-                <Link href={`/${slug}`} onClick={() => setIsMenuOpen(false)} className="">
+                <Link
+                  href={`/${slug}`}
+                  onClick={() => setIsMenuOpen(false)}
+                  className=""
+                >
                   {title}
                 </Link>
               </li>
@@ -95,3 +69,34 @@ export default function Navbar() {
     </div>
   );
 }
+
+const navItem = [
+  {
+    title: "home",
+    slug: "",
+  },
+  {
+    title: "news/events",
+    slug: "news&events",
+  },
+  {
+    title: "academics",
+    slug: "academics",
+  },
+  {
+    title: "gallery",
+    slug: "gallery",
+  },
+  {
+    title: "about us",
+    slug: "about-us",
+  },
+  {
+    title: "conact",
+    slug: "contact",
+  },
+  {
+    title: "admission",
+    slug: "admission",
+  },
+];

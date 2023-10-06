@@ -2,7 +2,22 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+const getEvents = async () => {
+  try {
+    const res = await fetch("http://localhost:3000/api/events", {
+      cache: "no-store",
+    });
+    if(!res.ok){
+      throw new Error('failed to fetch the notice')
+    }
+    return res.json()
+  } catch (error) {
+    console.log("error loading notice",error)
+  }
+};
+
 export default function News() {
+
   return (
     
     <div className={`max-w-[1543px] mx-auto bg-slate-200`}>
@@ -11,7 +26,7 @@ export default function News() {
         News And Events
         <hr className="border-black w-8 xl:w-20" />
       </div>
-      <div className=" grid grid-cols-2 xl:grid-cols-3 w-full gap-x-4 justify-evenly gap-y-5 xl:gap-y-14 mx-auto mt-6 px-3 md:px-5 pb-4 ">
+      <div className=" grid grid-cols-2 xl:grid-cols-3 w-full gap-x-4 justify-evenly gap-y-5 xl:gap-y-14 mx-auto mt-6 px-3 md:px-5 pb-10 ">
         {data.map(({ img, title, desc }, index) => (
           <div
             className=" h-56 sm:h-80 sm:w-80 md:w-[330px] md:h-96 lg:h-[495px] lg:w-[495px] xl:w-11/12 xl:h-[555px] lg:drop-shadow-lg bg-white mx-auto"

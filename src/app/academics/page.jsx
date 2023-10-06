@@ -7,7 +7,7 @@ const sans = Open_Sans({
   subsets: ["latin"],
 });
 
-export default function page() {
+export default function Academics() {
   return (
     <>
       <div className=" max-w-[1540px] mx-auto h-full">
@@ -18,22 +18,11 @@ export default function page() {
           className="object-cover min-h-full w-full p-5"
           alt="academics1"
         />
-
         <h1 className="text-center mt-8 text-xl lg:text-3xl font-extrabold">
           &quot; Our Dedicated Teaching Staff &quot;
         </h1>
         <p className=" mx-auto mt-4 text-sm sm:text-base xl:text-xl px-5 font-medium">
-          Our dedicated teachers go above and beyond to help students thrive.
-          They provide personalized attention, create a supportive classroom
-          environment, and offer guidance and mentorship. With their expertise
-          and commitment, our teachers empower students to reach their full
-          potential and cultivate a love for learning. Beyond delivering
-          curriculum content, our teachers act as mentors, guiding students on
-          their educational journey. They offer guidance, encouragement, and
-          constructive feedback, empowering students to develop critical
-          thinking skills and become lifelong learners. They inspire curiosity,
-          ignite a passion for knowledge, and instill confidence in their
-          students abilities.
+          {content}
         </p>
         <h1 className="text-center mt-8 text-xl xl:text-3xl font-extrabold">
           Courses Offered in RAH
@@ -104,7 +93,6 @@ export default function page() {
           />
         </div>
         <div className={sans.className}>
-
           <h1 className="text-center xl:my-10 xl:text-3xl font-extrabold">
             &quot;Voices of Success: Reflections from Our Accomplished
             Alumni&quot;
@@ -112,17 +100,33 @@ export default function page() {
           <div className="flex justify-between px-4 mt-4 mx-auto lg:h-72 pb-8">
             <div className="flex w-[44vw] h-[15vh] sm:w-[47vw] sm:h-[20vh] md:h-[26vh] lg:h-auto 2xl:w-[680px] justify-around items-center bg-sky-100">
               <div className="flex flex-col items-center">
-              <Image width={514} height={514} src="/assets/academics/icon.png" className=" w-[10vw] md:w-[12vw] lg:w-[14vw] xl:w-48 xl:h-48" alt="teacher"/>
-              <h1 className="text-[10px] sm:text-sm lg:text-xl">Name</h1>
-              <h1 className="text-[10px] sm:text-sm lg:text-xl">Profession</h1>
+                <Image
+                  width={514}
+                  height={514}
+                  src="/assets/academics/icon.png"
+                  className=" w-[10vw] md:w-[12vw] lg:w-[14vw] xl:w-48 xl:h-48"
+                  alt="teacher"
+                />
+                <h1 className="text-[10px] sm:text-sm lg:text-xl">Name</h1>
+                <h1 className="text-[10px] sm:text-sm lg:text-xl">
+                  Profession
+                </h1>
               </div>
               <p className="w-[55%] h-[75%] bg-[#D9D9D9] "></p>
             </div>
             <div className="flex w-[44vw] h-[15vh] sm:w-[47vw] sm:h-[20vh] md:h-[26vh] lg:h-auto 2xl:w-[680px] justify-around items-center bg-sky-100">
               <div className="flex flex-col items-center">
-              <Image width={514} height={514} src="/assets/academics/icon.png" className=" w-[10vw] md:w-[12vw] lg:w-[14vw] xl:w-48 xl:h-48" alt="teacher"/>
-              <h1 className="text-[10px] sm:text-sm lg:text-xl">Name</h1>
-              <h1 className="text-[10px] sm:text-sm lg:text-xl">Profession</h1>
+                <Image
+                  width={514}
+                  height={514}
+                  src="/assets/academics/icon.png"
+                  className=" w-[10vw] md:w-[12vw] lg:w-[14vw] xl:w-48 xl:h-48"
+                  alt="teacher"
+                />
+                <h1 className="text-[10px] sm:text-sm lg:text-xl">Name</h1>
+                <h1 className="text-[10px] sm:text-sm lg:text-xl">
+                  Profession
+                </h1>
               </div>
               <p className="w-[55%] h-[75%] bg-[#D9D9D9] "></p>
             </div>
@@ -132,3 +136,18 @@ export default function page() {
     </>
   );
 }
+
+const content = (
+  <>
+    Our dedicated teachers go above and beyond to help students thrive. They
+    provide personalized attention, create a supportive classroom environment,
+    and offer guidance and mentorship. With their expertise and commitment, our
+    teachers empower students to reach their full potential and cultivate a love
+    for learning. Beyond delivering curriculum content, our teachers act as
+    mentors, guiding students on their educational journey. They offer guidance,
+    encouragement, and constructive feedback, empowering students to develop
+    critical thinking skills and become lifelong learners. They inspire
+    curiosity, ignite a passion for knowledge, and instill confidence in their
+    students abilities.
+  </>
+);
